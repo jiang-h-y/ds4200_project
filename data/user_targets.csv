@@ -1,4 +1,4 @@
-,id_owner,gender,age,country,marital_status,live_with,occupation,sport,economic,smoke,alchol,spotify_usage_hours,spotify_usage_years,spotify_premium,extraversion,agreeableness, conscientiousness,neuroticism,openness
+,id_owner,gender,age,country,marital_status,live_with,occupation,sport,economic,smoke,alchol,spotify_usage_hours,spotify_usage_years,spotify_premium,extraversion,agreeableness,conscientiousness,neuroticism,openness
 0,0,Male,2,Italy,Single,I live with others,No job,No,Medium,No,No,2-3 Hours,2-4 years,No,0,1,1,1,1
 1,1,Female,1,Italy,Relationship,I live with others,No job,Sometimes,Medium,No,Yes,4-5 Hours,More than 5 years,Yes,1,1,0,2,1
 2,2,Male,1,Italy,Single,I live with others,No job,Sometimes,Medium,Yes,Yes,2-3 Hours,2-4 years,No,1,2,1,2,2
