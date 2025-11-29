@@ -1,0 +1,115 @@
+body.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;
+  text-align: center;
+  font-family: Georgia, sans-serif;
+  margin: 0;
+  background-color: #93b1b5;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  margin: 0;
+  background-color: #93b1b5;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    background-color: #e6ecec; 
+    padding: 12px 0 0 0;
+    border-bottom: 2px solid #134046;
+}
+
+nav a {
+    padding: 10px 20px;
+    background-color: #cfd8d8;
+    color: #134046;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid #134046;
+    border-bottom: none;
+    font-weight: bold;
+    position: relative;
+    top: 2px;              
+    transition: 0.2s;
+}
+
+nav a:hover {
+    background-color: #b8c5c5;
+}
+
+nav a.active {
+    background-color: #ffffff;
+    z-index: 10;
+    top: 0; 
+}
+
+img{
+    border-radius: 500px
+}
+
+.button {
+    display: inline-block;
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #134046;
+}
+
+.prev-button
+.next-button {
+  display: inline-block;            
+  width: fit-content;       
+  margin-left: auto;         
+  margin-right: 300px;
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button-row { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 100px;
+}
+
+.dishes-header {
+    text-align: center;
+}
+
+.recipe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; 
+  gap: 0px; 
+  margin: 20px auto; 
+  max-width: 900px;
+}
+
+.recipe-image {
+  width: 250px;           
+  margin-left: -250px;       
+  border-radius: 500px;      
+}
+
+.recipe-text {
+  max-width: 600px;
+}
