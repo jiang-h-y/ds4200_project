@@ -50,10 +50,6 @@ nav a.active {
     top: 0; 
 }
 
-img{
-    border-radius: 500px
-}
-
 .button {
     display: inline-block;
     background-color: #ffffff;
