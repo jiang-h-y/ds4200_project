@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-3063cce4fca0c8d4b58f1c6ebd609107"}, "mark": {"type": "rect"}, "encoding": {"color": {"field": "value", "scale": {"range": ["#e6ecec", "#134046"]}, "title": "% of Songs in Playlist", "type": "quantitative"}, "x": {"axis": {"labelAngle": 0}, "field": "level", "sort": ["Low", "Medium", "High"], "title": "Level", "type": "ordinal"}, "y": {"field": "genre", "title": "Genre", "type": "nominal"}}, "height": 400, "params": [{"name": "param_14", "bind": {"input": "radio", "options": ["agreeableness", "neuroticism"], "labels": ["Agreeableness", "Neuroticism"], "name": "Select a personality trait:"}, "value": "agreeableness"}], "title": "Genre Preferences based on Personality Trait", "transform": [{"filter": "(datum.trait === param_14)"}], "width": 400, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-3063cce4fca0c8d4b58f1c6ebd609107": [{"level": "High", "genre": "Pop", "value": 0.337697597076751, "trait": "agreeableness"}, {"level": "Low", "genre": "Pop", "value": 0.4248846928394217, "trait": "agreeableness"}, {"level": "Medium", "genre": "Pop", "value": 0.37837526787286185, "trait": "agreeableness"}, {"level": "High", "genre": "Local", "value": 0.30339583057631697, "trait": "agreeableness"}, {"level": "Low", "genre": "Local", "value": 0.25607950863314993, "trait": "agreeableness"}, {"level": "Medium", "genre": "Local", "value": 0.2631964393567277, "trait": "agreeableness"}, {"level": "High", "genre": "Rock", "value": 0.2927656846538522, "trait": "agreeableness"}, {"level": "Low", "genre": "Rock", "value": 0.27131455675524224, "trait": "agreeableness"}, {"level": "Medium", "genre": "Rock", "value": 0.3361062889519564, "trait": "agreeableness"}, {"level": "High", "genre": "Altern", "value": 0.173073682166706, "trait": "agreeableness"}, {"level": "Low", "genre": "Altern", "value": 0.13932842081321695, "trait": "agreeableness"}, {"level": "Medium", "genre": "Altern", "value": 0.1951314204254368, "trait": "agreeableness"}, {"level": "High", "genre": "Indie", "value": 0.09750069251577291, "trait": "agreeableness"}, {"level": "Low", "genre": "Indie", "value": 0.0979173542375849, "trait": "agreeableness"}, {"level": "Medium", "genre": "Indie", "value": 0.19779418830215095, "trait": "agreeableness"}, {"level": "High", "genre": "Pop", "value": 0.37743612690207906, "trait": "neuroticism"}, {"level": "Low", "genre": "Pop", "value": 0.3259544374062849, "trait": "neuroticism"}, {"level": "Medium", "genre": "Pop", "value": 0.387537766411299, "trait": "neuroticism"}, {"level": "High", "genre": "Local", "value": 0.25980757994939935, "trait": "neuroticism"}, {"level": "Low", "genre": "Local", "value": 0.2810529084999107, "trait": "neuroticism"}, {"level": "Medium", "genre": "Local", "value": 0.27211765841630214, "trait": "neuroticism"}, {"level": "High", "genre": "Rock", "value": 0.3434434056080128, "trait": "neuroticism"}, {"level": "Low", "genre": "Rock", "value": 0.3335012482641485, "trait": "neuroticism"}, {"level": "Medium", "genre": "Rock", "value": 0.308840027554683, "trait": "neuroticism"}, {"level": "High", "genre": "Altern", "value": 0.16051606665298854, "trait": "neuroticism"}, {"level": "Low", "genre": "Altern", "value": 0.25097581837976773, "trait": "neuroticism"}, {"level": "Medium", "genre": "Altern", "value": 0.1748765926604839, "trait": "neuroticism"}, {"level": "High", "genre": "Indie", "value": 0.14091342332862322, "trait": "neuroticism"}, {"level": "Low", "genre": "Indie", "value": 0.121717156817266, "trait": "neuroticism"}, {"level": "Medium", "genre": "Indie", "value": 0.19181614127965532, "trait": "neuroticism"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

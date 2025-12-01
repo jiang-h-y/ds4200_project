@@ -18,11 +18,11 @@ dataPromise.then(function(data) {
     right: 50
     };
 
-    let svg = d3.select("body")
+    let svg = d3.select("#vis")
     .append("svg")
     .attr("width", width)
     .attr("height", height)
-    .style("background", "lightyellow");
+    .style("background", "white");
 
     // define and add the scales
     let yScale = d3.scaleLinear()
@@ -72,6 +72,6 @@ dataPromise.then(function(data) {
     .attr("y", d => yScale(d.diversity_artists))
     .attr("width", xScale.bandwidth())
     .attr("height", d => height - margin.bottom - yScale(d.diversity_artists))
-    .attr("fill", "darkblue")
+    .attr("fill", "#134046")
 
 })
