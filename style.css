@@ -91,25 +91,3 @@ img{
     padding: 20px 100px;
 }
 
-.dishes-header {
-    text-align: center;
-}
-
-.recipe {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center; 
-  gap: 0px; 
-  margin: 20px auto; 
-  max-width: 900px;
-}
-
-.recipe-image {
-  width: 250px;           
-  margin-left: -250px;       
-  border-radius: 500px;      
-}
-
-.recipe-text {
-  max-width: 600px;
-}
